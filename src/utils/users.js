@@ -43,7 +43,7 @@ const removeUser = (id) => {
 const getUser = (id) => users.find((user) => user.id === id);
 
 const getUsersInRoom = (room) => {
-  return users.filter((user) => user.room === room.toLowerCase());
+  return users.filter((user) => user.room === user.room.toLowerCase());
 };
 
 module.exports = {
